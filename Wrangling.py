@@ -59,5 +59,10 @@ df.sort_values(by="Supervisor Districts")
 # this searches the column I listed for any null values and provides their count
 
 rows_to_fill = df.isnull().any(axis=1)
+# searches through each row along my axis to search for null values and assigns
+#it to a new variable
 
-print()
+df.fillna(0)
+# fills all NaN values with a specific value
+
+print(df[440:445])
